@@ -3,10 +3,10 @@ const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 const PORT = 3000
 const app = express()
+require('dotenv').config()
 
-const connectionString = 'mongodb+srv://ziphozenkosi:Salvation22@cluster0.ysfsjei.mongodb.net/?retryWrites=true&w=majority'
 //connecting to our database using the mongodb
-MongoClient.connect(connectionString)
+MongoClient.connect(process.env.MONGO_URL)
   .then(client => {
     console.log('Connected to Database')
     //changing the name of the database
