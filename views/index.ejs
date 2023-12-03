@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Star Wars Quote App</title>
-    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
-    <h1 data-position="header">May Node and Express be with you.</h1>
+    <h1 class="header">Simple Node Express MongoDB Star-Wars app..</h1>
 
-    <section data-position="add-quote">
+    <section class="add-quote flex-container">
       <h2>Add quote</h2>
 
       <form action="/quotes" method="POST">
@@ -19,7 +19,7 @@
       </form>
     </section>
 
-    <section data-position="update-quote">
+    <section class="update-quote flex-container">
       <div>
         <h2>Cebo Mthor invades!</h2>
         <p>
@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section data-position="delete-quote">
+    <section class="delete-quote flex-container">
       <div>
         <h2>Remove Cebo Mthor!</h2>
         <p>
@@ -41,7 +41,7 @@
       <div id="message"></div>
     </section>
 
-    <section data-position="quotes">
+    <section class="section">
       <h2>Quotes</h2>
 
       <ul class="quotes">

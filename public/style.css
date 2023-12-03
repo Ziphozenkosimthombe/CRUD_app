@@ -1,0 +1,46 @@
+:root{
+    --color-bg: gray;
+    --color-section-bg: white;
+    --border-radius-sen: 5%;
+}
+body{
+    background-color: var(--color-bg);
+
+}
+.header{
+    background-color: var(--color-section-bg);
+    height: 10vh;
+    margin: 2rem;
+    padding-top: 1.5rem;
+    padding-left: .8rem;
+    border-radius: 10px;
+    width: 89%;
+}
+form button{
+    margin-right:16rem
+}
+form input{
+    font-size: 10px;
+}
+.flex-container{
+    width: 25%;
+    float: left;
+    margin: 3rem;
+    height: 40vh;
+    text-align: center;
+    background-color:var(--color-section-bg);
+    border-radius: var(--border-radius-sen);
+}
+.section{
+    background-color: var(--color-section-bg);
+    clear: both;
+    width: 90%;
+    margin: 2rem;
+    height: 50vh;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-top: .8rem;
+}
+.section > h2{
+    font-weight: 800;
+}
