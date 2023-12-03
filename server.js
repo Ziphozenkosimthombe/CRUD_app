@@ -1,12 +1,10 @@
 const express = require('express')
-const cors = require('cors')
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
-const PORT = 8000
+const PORT = 3000
 const app = express()
 
 const connectionString = 'mongodb+srv://ziphozenkosi:Salvation22@cluster0.ysfsjei.mongodb.net/?retryWrites=true&w=majority'
-app.use(cors)
 //connecting to our database using the mongodb
 MongoClient.connect(connectionString)
   .then(client => {
@@ -76,7 +74,7 @@ MongoClient.connect(connectionString)
             })
             .catch(error => console.error(error))
     })
-    app.listen(process.env.PORT || PORT, ()=>{
+    app.listen(PORT, ()=>{
         console.log(`listining on Port ${PORT}`)
     })
 
